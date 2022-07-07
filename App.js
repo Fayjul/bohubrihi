@@ -1,3 +1,28 @@
+const MyEvent = require('./myEvent');
+const myEvent = new MyEvent();
+
+myEvent.on('event1', () => {
+  console.log('From myEvent.js ');
+});
+myEvent.function1();
+
+/* EventEmmiter
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+
+emitter.on('abc', () => {
+  console.log('Bangladesh');
+});
+
+emitter.on('event1', (e) => {
+  console.log('Event 1 is calling', e);
+});
+emitter.on('event2', () => {
+  console.log('Event 2 is calling');
+});
+emitter.emit('event1', { name: 'fayjul', id: '123' });
+*/
+/* synchronus and asynchronus module
 const fs = require('fs');
 
 fs.readFile('./files/input.txt', 'utf-8', (error, text) => {
@@ -12,6 +37,7 @@ fs.readFile('./files/input.txt', 'utf-8', (error, text) => {
     });
   }
 });
+*/
 
 /*
 sychronus system
