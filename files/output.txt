@@ -1,0 +1,1 @@
+Copide text: This is from input.txt.
